@@ -1,0 +1,9 @@
+:root{
+    --search-columns:2;
+}
+
+
+.ListOfGifs{
+    
+    padding: 1rem;
+}

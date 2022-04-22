@@ -1,3 +1,14 @@
 ul,h3{
     align-self: flex-start;
 }
+input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: #fff;
+    padding: 0.5rem 0;
+}
+input::placeholder{
+    color: #fff;
+}

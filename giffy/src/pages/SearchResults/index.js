@@ -1,14 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import { Link } from "wouter";
 import ListOfGifs from "../../components/ListOfGifs/ListOfGifs";
+import Spinner from "../../components/Spinner/Spinner";
+import useGifs from '../../hooks/useGif'
 
-export default function SearchResults({params}) {
-    const { keyword, rating } = params
-
+function SearchResults({params}) {
+    const { keyword } = params
+    const{loading,gifs} = useGifs({keyword})
 
     return (
-        <>
-         <ListOfGifs params={keyword} />
+        <>{loading
+            ?<Spinner/>
+            :<ListOfGifs gifs={gifs} />
+        }
+    
         </>
     )
 }
+
+export default React.memo(SearchResults)

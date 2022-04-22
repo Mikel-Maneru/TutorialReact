@@ -3,7 +3,6 @@
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    margin: 16px;
     width: 100%;
     position: relative;
 
@@ -24,6 +23,6 @@ a{
     font-size: 15px;
 }
 div.Container-Gif{
-width: 30%;
+width: 20%;
 display: inline-block;
 }
