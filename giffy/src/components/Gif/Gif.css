@@ -1,0 +1,29 @@
+.Gif{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    margin: 16px;
+    width: 100%;
+    position: relative;
+
+}
+.Gif h4{
+    margin: 0;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+.Gif img{
+    object-fit: contain;
+}
+a{
+    color: aqua;
+    font-size: 15px;
+}
+div.Container-Gif{
+width: 30%;
+display: inline-block;
+}
